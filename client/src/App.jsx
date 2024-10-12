@@ -192,9 +192,7 @@ function App() {
     try {
       console.log("selectedType:", selectedType);
 
-      const results = await fetch(
-        `https://pokemon-app-backend.vercel.app/api/type/${selectedType}`
-      );
+      const results = await fetch(`/api/type/${selectedType}`);
       const typeResults = await results.json();
 
       const pokemonData = typeResults.pokemon.map((p) => ({
