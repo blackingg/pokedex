@@ -296,16 +296,18 @@ function App() {
                   className="bg-white flex flex-col justify-center items-center w-[48%] min-w-[140px] md:min-w-[180px] lg:min-w-[200px] md:w-[30%] lg:w-[22%] rounded-lg mt-16 md:mt-10 pt-10 p-5 relative cursor-pointer hover:border-gray-300 shadow-md hover:shadow-none group"
                   onClick={() => handlePokemonClick(pokemon)}
                 >
-                  <img
-                    className="absolute top-[-55px] pixelated transition-all duration-300 ease-in-out group-hover:opacity-0 group-hover:scale-125"
-                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-                    alt={pokemon.name}
-                  />
-                  <img
-                    className="absolute top-[-55px] pixelated transition-all duration-300 ease-in-out opacity-0 scale-100 group-hover:opacity-100 group-hover:scale-125"
-                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
-                    alt={pokemon.name}
-                  />
+                  <div className="absolute top-[-70px] w-[120px] h-[120px] flex items-center justify-center">
+                    <img
+                      className="absolute w-full h-full object-contain transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+                      src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
+                      alt={pokemon.name}
+                    />
+                    <img
+                      className="absolute w-full h-full object-contain transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                      src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
+                      alt={pokemon.name}
+                    />
+                  </div>
                   <span className="text-base text-gray-300 font-semibold">
                     N°{pokemon.id}
                   </span>
