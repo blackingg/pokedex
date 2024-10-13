@@ -288,7 +288,7 @@ function App() {
             <div
               className={`${
                 selectedPokemon == null && !loading ? "z-20" : ""
-              } flex flex-wrap px-5 md:px-0 lg:px-10 relative md:w-[70%] md:mt-20 gap-3 md:gap-4 lg:gap-10`}
+              } flex flex-wrap px-5 md:px-0 lg:px-10 relative lg:w-[70%] md:mt-20 gap-3 md:gap-4 lg:gap-10`}
             >
               {currentList.slice(0, maxIndex).map((pokemon) => (
                 <div
