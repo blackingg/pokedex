@@ -296,7 +296,7 @@ function App() {
                   className="bg-white flex flex-col justify-center items-center w-[48%] min-w-[140px] md:min-w-[180px] lg:min-w-[200px] md:w-[30%] lg:w-[22%] rounded-lg mt-16 md:mt-10 pt-10 p-5 relative cursor-pointer hover:border-gray-300 shadow-md hover:shadow-none group"
                   onClick={() => handlePokemonClick(pokemon)}
                 >
-                  <div className="absolute top-[-70px] w-[120px] h-[120px] flex items-center justify-center">
+                  <div className="absolute top-[-35%] w-[60%] h-[60%] flex items-center justify-center">
                     <img
                       className="absolute w-full h-full object-contain transition-opacity duration-300 ease-in-out group-hover:opacity-0"
                       src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
