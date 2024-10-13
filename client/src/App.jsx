@@ -230,7 +230,7 @@ function App() {
         <>
           <div className="lg:fixed lg:z-30 mt-10 px-10 md:px-0">
             <div className="flex space-x-3 md:space-x-8 lg:space-x-10">
-              <div className="bg-white flex w-[70%] lg:w-[840px] p-4 mt-5 ml-0 md:ml-12 shadow-md rounded-3xl">
+              <div className="bg-white flex w-[70%] lg:w-[840px] p-4 mt-5 ml-0 lg:ml-12 shadow-md rounded-3xl">
                 <input
                   id="search-input"
                   className="w-full md:w-fit flex-1 outline-none text-base text-blue-900"
@@ -255,7 +255,7 @@ function App() {
               </div>
             </div>
 
-            <div className="relative flex gap-5 w-[70%] lg:w-[840px] p-4 mt-1 ml-0 md:ml-12">
+            <div className="relative flex gap-5 w-[70%] lg:w-[840px] p-4 mt-1 ml-0 lg:ml-12">
               <select
                 id="dropdown"
                 value={selectedType}
@@ -288,7 +288,7 @@ function App() {
             <div
               className={`${
                 selectedPokemon == null && !loading ? "z-20" : ""
-              } flex flex-wrap px-5 md:px-0 lg:px-10 relative lg:w-[70%] md:mt-20 gap-3 md:gap-4 lg:gap-10`}
+              } flex flex-wrap px-5 md:px-0 lg:px-10 relative lg:w-[70%] lg:mt-20 gap-3 md:gap-4 lg:gap-10`}
             >
               {currentList.slice(0, maxIndex).map((pokemon) => (
                 <div
